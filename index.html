@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SiagaCacar Asrama — Cegah Cacar Air Sejak dari Kamar</title>
+  <meta name="description" content="Website edukasi dan alat bantu pencegahan cacar air di asrama: cek gejala, kalkulator masa isolasi, checklist kebersihan kamar, kuis, dan pelurus hoaks kesehatan.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%9B%A1%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten utama</a>
+
+  <!-- ================= NAVIGASI ================= -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#beranda" aria-label="SiagaCacar Asrama, ke beranda">
+        <span class="brand-icon" aria-hidden="true">🛡️</span>
+        <span>Siaga<strong>Cacar</strong></span>
+      </a>
+      <button id="navToggle" class="icon-btn nav-toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu">☰</button>
+      <nav id="navMenu" class="nav-menu" aria-label="Navigasi utama">
+        <a href="#masalah">Masalah</a>
+        <a href="#edukasi">Edukasi</a>
+        <a href="#cek-gejala">Cek Gejala</a>
+        <a href="#isolasi">Isolasi</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#kuis">Kuis</a>
+        <a href="#hoaks">Anti-Hoaks</a>
+        <a href="#lapor">Lapor</a>
+      </nav>
+      <button id="themeToggle" class="icon-btn" aria-label="Ganti tema terang/gelap" title="Ganti tema">🌓</button>
+    </div>
+  </header>
+
+  <main id="konten">
+    <!-- ================= HERO ================= -->
+    <section id="beranda" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Proyek Dampak Sosial Informatika</p>
+          <h1>Cegah <span class="hl">cacar air</span> di asrama — mulai dari informasi yang benar.</h1>
+          <p class="lead">Saat cacar air sedang musim, kabar yang beredar di grup chat sering lebih cepat daripada fakta. SiagaCacar membantu penghuni asrama dan pembina mengenali gejala, menghitung masa isolasi, menjaga kebersihan kamar, dan melaporkan kasus dengan tenang tanpa stigma.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#cek-gejala">Cek gejalaku sekarang</a>
+            <a class="btn btn-ghost" href="#edukasi">Pelajari dulu</a>
+          </div>
+          <p class="fineprint">Alat ini untuk edukasi, bukan pengganti diagnosis tenaga kesehatan.</p>
+        </div>
+        <ul class="stat-cards" aria-label="Fakta singkat">
+          <li><strong>10–21 hari</strong><span>masa inkubasi setelah kontak dengan penderita</span></li>
+          <li><strong>1–2 hari</strong><span>menular sebelum ruam pertama muncul</span></li>
+          <li><strong>2 dosis</strong><span>vaksin varisela untuk perlindungan terbaik</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= MASALAH ================= -->
+    <section id="masalah" class="section">
+      <div class="container">
+        <h2>Masalah yang diangkat</h2>
+        <p class="section-lead"><strong>Informasi kesehatan di asrama menyebar lewat grup chat dan pesan berantai secara cepat, tetapi rentan keliru dan terlambat ditindaklanjuti</strong>, sehingga cacar air mudah menular dan penanganannya sering salah.</p>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>🔍 Penyebab</h3>
+            <ul class="clean">
+              <li>Info kesehatan beredar lewat WhatsApp/pesan berantai tanpa dicek sumbernya (hoaks dan mitos).</li>
+              <li>Tidak ada satu rujukan singkat yang mudah diakses penghuni saat butuh jawaban cepat.</li>
+              <li>Takut dijauhi (stigma) membuat gejala disembunyikan dan laporan terlambat.</li>
+              <li>Hunian padat, ventilasi terbatas, dan kebiasaan berbagi barang pribadi.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>⚠️ Dampak</h3>
+            <ul class="clean">
+              <li>Penularan cepat antar-kamar dan antar-blok.</li>
+              <li>Penanganan keliru, misalnya dilarang mandi atau memakai ramuan yang tidak terbukti.</li>
+              <li>Panik, saling menyalahkan, dan pengucilan teman yang sakit.</li>
+              <li>Absen sekolah dan terganggunya kegiatan belajar.</li>
+              <li>Risiko lebih berat bagi penghuni dengan daya tahan tubuh lemah atau ibu hamil di lingkungan sekitar.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>👥 Pihak yang terdampak</h3>
+            <ul class="clean">
+              <li><strong>Penghuni asrama</strong> (siswa/santri) sebagai pengguna utama.</li>
+              <li><strong>Pembina/pengasuh</strong> yang harus mengambil keputusan cepat.</li>
+              <li><strong>Petugas UKS/klinik</strong> yang menerima laporan.</li>
+              <li><strong>Orang tua</strong> yang membutuhkan kabar akurat.</li>
+              <li><strong>Pengelola sekolah</strong> yang menjaga kegiatan tetap berjalan.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid grid-2 mt">
+          <article class="card accent">
+            <h3>🎯 Tujuan website</h3>
+            <ol class="clean-ol">
+              <li>Menyediakan edukasi cacar air yang ringkas dan terpercaya.</li>
+              <li>Mendorong deteksi dini dan pelaporan cepat melalui alat bantu yang berfungsi.</li>
+              <li>Membangun kebiasaan bersih di kamar asrama.</li>
+              <li>Melawan hoaks dan stigma dengan literasi digital.</li>
+            </ol>
+          </article>
+          <article class="card accent">
+            <h3>🧑‍🎓 Sasaran pengguna</h3>
+            <p>Penghuni asrama usia SMP–SMA (13–19 tahun) sebagai pengguna utama, serta pembina asrama dan petugas UKS sebagai pengguna pendukung. Website dirancang ringan, tanpa login, dan nyaman dibuka di ponsel.</p>
+            <p class="note"><strong>Kaitan dengan informatika:</strong> informasi digital menyebar sangat cepat, bisa menyelamatkan maupun menyesatkan. Solusi ini memakai teknologi untuk menyajikan informasi yang terverifikasi dan mempercepat pelaporan.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUKASI ================= -->
+    <section id="edukasi" class="section alt">
+      <div class="container">
+        <h2>Edukasi cacar air (varisela)</h2>
+        <p class="section-lead">Klik tiap judul untuk membuka penjelasannya.</p>
+        <p class="callout info">Website ini membahas <strong>cacar air (varisela)</strong>, penyakit akibat virus varicella-zoster. Cacar monyet (mpox) adalah penyakit yang berbeda. Jika ragu jenisnya, tanyakan ke tenaga kesehatan.</p>
+
+        <div class="accordion">
+          <details class="acc" open>
+            <summary>Apa itu cacar air?</summary>
+            <div class="acc-body">
+              <p>Cacar air adalah infeksi virus yang menyebabkan ruam gatal berisi cairan di seluruh tubuh, sering disertai demam dan lemas. Pada kebanyakan orang sehat penyakit ini sembuh sendiri dalam 1–2 minggu, tetapi bisa lebih berat pada remaja dan dewasa, ibu hamil, bayi baru lahir, dan orang dengan daya tahan tubuh lemah.</p>
+              <p>Setelah sembuh, virus tetap “tidur” di saraf dan pada sebagian orang dapat aktif lagi bertahun-tahun kemudian sebagai cacar ular (herpes zoster).</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Bagaimana cara penularannya?</summary>
+            <div class="acc-body">
+              <ul>
+                <li>Lewat percikan/udara saat penderita batuk, bersin, atau berbicara dekat.</li>
+                <li>Kontak langsung dengan cairan dari lenting.</li>
+                <li>Barang yang baru saja terkena cairan lenting (handuk, seprai) bisa menjadi perantara.</li>
+              </ul>
+              <p><strong>Penting:</strong> seseorang sudah dapat menularkan sekitar <strong>1–2 hari sebelum ruam muncul</strong> sampai <strong>semua lenting mengering dan berkeropeng</strong>. Karena itulah penularan di asrama bisa terjadi sebelum ada yang sadar.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Gejala dan tahap ruam</summary>
+            <div class="acc-body">
+              <p>Biasanya diawali demam ringan, lemas, atau sakit kepala 1–2 hari, lalu ruam muncul bergelombang. Dalam satu waktu, ketiga tahap di bawah bisa ada bersamaan di tubuh yang sama.</p>
+              <ol class="stages">
+                <li><span class="dot d1"></span><div><strong>Bercak/bintil merah</strong><br>Gatal, mulai di dada, punggung, wajah, lalu menyebar.</div></li>
+                <li><span class="dot d2"></span><div><strong>Lenting berisi cairan</strong><br>Tahap paling menular. Jangan dipecahkan atau digaruk.</div></li>
+                <li><span class="dot d3"></span><div><strong>Pecah lalu berkeropeng</strong><br>Setelah <em>semua</em> lenting berkeropeng, masa menular berakhir.</div></li>
+              </ol>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Cara mencegah di asrama</summary>
+            <div class="acc-body">
+              <ul>
+                <li><strong>Vaksinasi varisela 2 dosis</strong> (tanyakan jadwal dan ketersediaan ke puskesmas/dokter). Vaksin sangat efektif mencegah bentuk berat.</li>
+                <li>Cuci tangan dengan sabun minimal 20 detik, terutama sebelum makan dan setelah dari toilet.</li>
+                <li>Tidak berbagi handuk, alat makan, sikat gigi, dan pakaian.</li>
+                <li>Buka jendela/ventilasi kamar setiap pagi agar udara bergantian.</li>
+                <li>Ganti seprai dan jemur kasur/bantal secara rutin.</li>
+                <li>Segera lapor dan isolasi diri jika bergejala, jangan menunggu parah.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Jika kamu atau temanmu sakit</summary>
+            <div class="acc-body">
+              <ul>
+                <li><strong>Isolasi</strong> di ruang terpisah sampai semua lenting berkeropeng, dan jangan ke kelas atau kantin.</li>
+                <li><strong>Lapor</strong> ke pembina/UKS, lalu periksa ke tenaga kesehatan.</li>
+                <li>Mandi tetap boleh dengan air bersih, lalu keringkan dengan menepuk lembut, bukan menggosok.</li>
+                <li>Potong kuku pendek dan hindari menggaruk untuk mencegah infeksi dan bekas luka.</li>
+                <li>Demam atau nyeri: gunakan obat sesuai saran tenaga kesehatan. <strong>Hindari aspirin pada anak dan remaja</strong> karena berisiko sindrom Reye.</li>
+                <li>Teman yang sakit perlu <strong>dukungan</strong> (makanan, kabar, semangat), bukan dijauhi atau dipermalukan.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Tanda bahaya: segera ke fasilitas kesehatan</summary>
+            <div class="acc-body">
+              <ul>
+                <li>Sesak napas atau batuk berat.</li>
+                <li>Demam di atas 39 °C atau berlangsung lebih dari 4 hari.</li>
+                <li>Ruam di dekat atau di dalam mata.</li>
+                <li>Kejang, sangat mengantuk, bingung, atau leher kaku.</li>
+                <li>Lenting yang bengkak, merah, nyeri, atau bernanah (tanda infeksi bakteri).</li>
+                <li>Muntah terus-menerus atau tidak bisa minum.</li>
+              </ul>
+              <p>Beri tahu tenaga kesehatan <strong>lebih awal</strong> jika kamu hamil, berdaya tahan tubuh lemah, atau sekamar dengan orang seperti itu.</p>
+            </div>
+          </details>
+        </div>
+
+        <h3 class="mt">Peran masing-masing pihak</h3>
+        <div class="grid grid-3">
+          <article class="card"><h4>Penghuni</h4><p>Jaga kebersihan, kenali gejala, lapor cepat, dan bantu teman yang sakit tanpa menyebar gosip.</p></article>
+          <article class="card"><h4>Pembina/pengasuh</h4><p>Sediakan ruang isolasi, koordinasi dengan UKS/puskesmas, dan bagikan informasi resmi yang seragam.</p></article>
+          <article class="card"><h4>UKS/tenaga kesehatan</h4><p>Konfirmasi diagnosis, tentukan masa isolasi, dan beri arahan vaksinasi serta penanganan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CEK GEJALA ================= -->
+    <section id="cek-gejala" class="section">
+      <div class="container narrow">
+        <h2>Cek gejala mandiri</h2>
+        <p class="section-lead">Centang yang sesuai dengan kondisimu. Hasilnya berupa panduan langkah berikutnya, <strong>bukan diagnosis</strong>.</p>
+        <form id="cekForm" class="card form-card" novalidate>
+          <div id="cekGroups"></div>
+          <div class="btn-row">
+            <button type="submit" class="btn btn-primary">Lihat hasil</button>
+            <button type="button" id="cekReset" class="btn btn-ghost">Ulangi</button>
+          </div>
+        </form>
+        <div id="cekHasil" class="result" tabindex="-1" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ================= KALKULATOR ISOLASI ================= -->
+    <section id="isolasi" class="section alt">
+      <div class="container narrow">
+        <h2>Kalkulator masa isolasi &amp; pemantauan</h2>
+        <p class="section-lead">Isi salah satu atau keduanya. Tanggal hanya diproses di perangkatmu dan tidak dikirim ke mana pun.</p>
+        <form id="isoForm" class="card form-card" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="tglRuam">Tanggal ruam pertama muncul <span class="opt">(jika sedang sakit)</span></label>
+              <input type="date" id="tglRuam">
+            </div>
+            <div class="field">
+              <label for="tglPaparan">Tanggal kontak terakhir dengan penderita <span class="opt">(jika hanya terpapar)</span></label>
+              <input type="date" id="tglPaparan">
+            </div>
+          </div>
+          <div class="btn-row">
+            <button type="submit" class="btn btn-primary">Hitung</button>
+            <button type="button" id="isoReset" class="btn btn-ghost">Bersihkan</button>
+          </div>
+        </form>
+        <div id="isoHasil" class="result" tabindex="-1" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ================= CHECKLIST ================= -->
+    <section id="checklist" class="section">
+      <div class="container narrow">
+        <h2>Checklist asrama bersih &amp; siaga</h2>
+        <p class="section-lead">Centang kebiasaan yang sudah kamu lakukan. Progresmu tersimpan di perangkat ini.</p>
+        <div class="card">
+          <div class="progress-head">
+            <strong id="clText">0 dari 0 selesai</strong>
+            <button type="button" id="clReset" class="btn btn-small btn-ghost">Reset</button>
+          </div>
+          <div class="progress" role="progressbar" aria-labelledby="clText" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="clBar"><span id="clFill"></span></div>
+          <div id="clGroups"></div>
+          <p id="clDone" class="callout ok" hidden>Hebat! Semua kebiasaan sudah terpenuhi. Ajak teman sekamarmu juga. 🎉</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= KUIS ================= -->
+    <section id="kuis" class="section alt">
+      <div class="container narrow">
+        <h2>Kuis pemahaman</h2>
+        <p class="section-lead">Uji pemahamanmu dalam 8 pertanyaan. Urutan jawaban diacak setiap kali.</p>
+        <div id="quizBox" class="card quiz"></div>
+      </div>
+    </section>
+
+    <!-- ================= ANTI HOAKS ================= -->
+    <section id="hoaks" class="section">
+      <div class="container narrow">
+        <h2>Pelurus hoaks &amp; mitos</h2>
+        <p class="section-lead">Banyak pesan berantai tentang cacar air yang keliru. Cari kata kunci atau buka tiap kartu untuk melihat faktanya.</p>
+        <div class="search-row">
+          <label for="hoaksSearch" class="sr-only">Cari mitos</label>
+          <input type="search" id="hoaksSearch" placeholder="Cari, mis. mandi, bedak, vaksin…" autocomplete="off">
+          <span id="hoaksCount" class="muted" aria-live="polite"></span>
+        </div>
+        <div id="hoaksList" class="myth-list"></div>
+
+        <div class="card accent mt">
+          <h3>5 langkah cek sebelum meneruskan pesan kesehatan</h3>
+          <ol class="clean-ol">
+            <li><strong>Siapa pengirim aslinya?</strong> Pesan tanpa nama atau “katanya dokter” patut dicurigai.</li>
+            <li><strong>Apa sumber primernya?</strong> Cari di situs Kemenkes, WHO, CDC, IDAI, atau puskesmas.</li>
+            <li><strong>Kapan dibuat?</strong> Informasi lama bisa sudah tidak berlaku.</li>
+            <li><strong>Apakah memancing panik atau marah?</strong> Itu tanda khas hoaks.</li>
+            <li><strong>Tanya pembina/UKS</strong> sebelum membagikan ke grup.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= LAPOR ================= -->
+    <section id="lapor" class="section alt">
+      <div class="container narrow">
+        <h2>Buat pesan laporan ke pembina/UKS</h2>
+        <p class="section-lead">Isi data seperlunya, pesan siap kirim akan tersusun otomatis. Data tidak disimpan di server.</p>
+        <div class="grid grid-2 report-grid">
+          <form id="laporForm" class="card form-card" novalidate>
+            <div class="field"><label for="lpNama">Nama <span class="opt">(boleh dikosongkan)</span></label><input id="lpNama" type="text" autocomplete="off"></div>
+            <div class="field"><label for="lpKamar">Kamar/Blok</label><input id="lpKamar" type="text" placeholder="mis. Blok B, Kamar 12" autocomplete="off"></div>
+            <div class="field"><label for="lpTgl">Tanggal ruam pertama muncul</label><input id="lpTgl" type="date"></div>
+            <div class="field"><label for="lpGejala">Gejala yang dirasakan</label><textarea id="lpGejala" rows="3" placeholder="mis. demam, bintik merah gatal di dada dan punggung"></textarea></div>
+            <div class="field"><label for="lpKontak">Teman yang kontak dekat <span class="opt">(opsional)</span></label><input id="lpKontak" type="text" placeholder="mis. teman sekamar 3 orang" autocomplete="off"></div>
+            <div class="field">
+              <label for="lpVaksin">Riwayat cacar air/vaksin</label>
+              <select id="lpVaksin">
+                <option value="Tidak tahu">Tidak tahu</option>
+                <option value="Sudah pernah cacar air">Sudah pernah cacar air</option>
+                <option value="Sudah vaksin varisela">Sudah vaksin varisela</option>
+                <option value="Belum pernah cacar dan belum vaksin">Belum pernah cacar dan belum vaksin</option>
+              </select>
+            </div>
+            <div class="field"><label for="lpWa">Nomor WhatsApp pembina <span class="opt">(opsional)</span></label><input id="lpWa" type="tel" inputmode="tel" placeholder="mis. 0812xxxxxxx" autocomplete="off"></div>
+          </form>
+          <div class="card">
+            <label for="laporOut"><strong>Pesan laporan</strong></label>
+            <textarea id="laporOut" rows="14" readonly></textarea>
+            <div class="btn-row">
+              <button type="button" id="lpCopy" class="btn btn-primary">Salin pesan</button>
+              <a id="lpSend" class="btn btn-ghost" href="#lapor" target="_blank" rel="noopener">Kirim via WhatsApp</a>
+            </div>
+            <p class="fineprint">Laporkan sedini mungkin. Melapor bukan aib, melainkan bentuk kepedulian pada teman sekamar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Disclaimer:</strong> Konten ini bersifat edukasi umum dan tidak menggantikan pemeriksaan, diagnosis, atau pengobatan oleh dokter/tenaga kesehatan. Dalam keadaan darurat, segera hubungi fasilitas kesehatan terdekat.</p>
+      <p><strong>Rujukan:</strong> CDC (cdc.gov/chickenpox), WHO, Kementerian Kesehatan RI, dan Ikatan Dokter Anak Indonesia (IDAI). Periksa pembaruan pedoman di situs resminya.</p>
+      <p class="muted">© <span id="year"></span> SiagaCacar Asrama · Proyek Informatika · Dibuat dengan HTML, CSS, dan JavaScript.</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
